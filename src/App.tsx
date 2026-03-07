@@ -6,10 +6,9 @@ function App() {
     <div className="container">
       <h1>Miu Portfolio</h1>
 
-      <p>
-  GitHub: 
+<p className="github">
   <a href="https://github.com/miu-miura-dev" target="_blank">
-    https://github.com/miu-miura-dev
+    GitHub Profile
   </a>
 </p>
 
@@ -22,4 +21,4 @@ function App() {
   )
 }
 
-export default App
+export default App  
