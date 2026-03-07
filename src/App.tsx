@@ -6,6 +6,13 @@ function App() {
     <div className="container">
       <h1>Miu Portfolio</h1>
 
+      <p>
+  GitHub: 
+  <a href="https://github.com/miu-miura-dev" target="_blank">
+    https://github.com/miu-miura-dev
+  </a>
+</p>
+
       <div className="projects">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
