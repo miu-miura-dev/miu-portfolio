@@ -2,32 +2,32 @@ import "./Skill.css";
 
 const skills = [
   {
-    icon: "public/images/icon/react.png",
+    icon: "/images/icon/react.png",
     title: "React",
     text: "コンポーネント設計を意識した開発が可能。API連携・フォーム実装など実務を想定した実装経験あり。",
   },
   {
-    icon: "public/images/icon/typescript.png",
+    icon: "/images/icon/typescript.png",
     title: "TypeScript",
     text: "型安全を意識した開発が可能。propsや配列・オブジェクトの型定義を用いた実装経験あり。",
   },
   {
-    icon: "public/images/icon/html_css.png",
+    icon: "/images/icon/html_css.png",
     title: "HTML / CSS",
     text: "レスポンシブ対応・レイアウト設計が可能。Flexbox・Gridを用いた実装経験あり。",
   },
   {
-    icon: "public/images/icon/api.png",
+    icon: "/images/icon/api.png",
     title: "API Integration",
     text: "外部APIからのデータ取得・表示処理の実装経験あり。ローディング・エラーハンドリング対応可能。",
   },
   {
-    icon: "public/images/icon/form.png",
+    icon: "/images/icon/form.png",
     title: "Form Handling",
     text: "react-hook-formを用いたフォーム実装。バリデーション・UXを意識した設計が可能。",
   },
   {
-    icon: "public/images/icon/git.png",
+    icon: "/images/icon/git.png",
     title: "Git / GitHub",
     text: "バージョン管理・コード管理が可能。GitHubを用いたポートフォリオ公開経験あり。",
   },
