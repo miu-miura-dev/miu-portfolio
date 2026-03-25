@@ -1,0 +1,33 @@
+.contact {
+  background: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.contact__text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact__links a {
+  font-size: 14px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact__links a:hover {
+  text-decoration: underline;
+}

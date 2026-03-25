@@ -1,0 +1,122 @@
+/* ===== Works全体 ===== */
+.works {
+  background: #e5e7eb;
+  padding: 80px 20px;
+}
+
+.works h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* ===== グリッド（2列） ===== */
+.projects-grid {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* ===== カード ===== */
+.project-card {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden; /* ←超重要（画像はみ出し防止） */
+
+  min-height: 420px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ===== 左：テキスト ===== */
+.project-card__content {
+  flex: 1;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-card__title {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.project-card__description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/* 技術タグ */
+.project-card__tech {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.project-card__tech span {
+  font-size: 11px;
+  background: #f3f4f6;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+/* 工夫 */
+.project-card__ingenuity {
+  
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* ボタン */
+.project-card__links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-card__demo {
+  background: #696969;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.project-card__github {
+  background: #e5e7eb;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* ===== 右：画像 ===== */
+.project-card__image {
+  flex: 1.2;
+  position: relative;
+}
+
+.project-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transform: scale(1.05);
+}
+
+/* ===== レスポンシブ ===== */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-card__image {
+    height: 200px;
+  }
+}

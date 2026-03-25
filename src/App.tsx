@@ -1,24 +1,7 @@
-import { ProjectCard } from "./components/ProjectCard"
-import { projects } from "./data/projects"
+import Home from "./components/pages/Home";
 
 function App() {
-  return (
-    <div className="container">
-      <h1>Miu Portfolio</h1>
-
-<p className="github">
-  <a href="https://github.com/miu-miura-dev" target="_blank">
-    GitHub Profile
-  </a>
-</p>
-
-      <div className="projects">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
-      </div>
-    </div>
-  )
+  return <Home />;
 }
 
-export default App  
+export default App;
