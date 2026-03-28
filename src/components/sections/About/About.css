@@ -1,5 +1,5 @@
 .about {
-  background-color: #f3f4f6;
+  background-color: #f7f7f7;
   padding: 80px 20px;
 }
 
@@ -34,4 +34,28 @@
 
 .about__content p {
   margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .about__container {
+    flex-direction: column; /* ←縦並び */
+    text-align: center;     /* ←中央寄せ */
+    gap: 24px;
+  }
+
+  .about__image {
+    order: -1; /* ←画像を上に */
+  }
+
+  .about__image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about__content {
+    font-size: 13px;
+    line-height: 1.7;
+      max-width: 320px;  /* ←これが神 */
+  margin: 0 auto;    /* ←中央に */
+  }
 }

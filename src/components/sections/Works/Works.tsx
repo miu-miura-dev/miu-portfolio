@@ -1,6 +1,6 @@
 import { ProjectCard } from "../../works/ProjectCard";
 import { projects } from "../../../data/projects";
-import "./Works.css";
+import "./Work.css";
 
 const Works = () => {
   return (
