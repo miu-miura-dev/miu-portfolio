@@ -7,25 +7,31 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__inner">
+        
         {/* ロゴ */}
         <h1 className="header__logo">MIU MIURA</h1>
 
-        {/* ナビ（PC） */}
-        <nav className="header__nav">
-          <a href="#works">WORKS</a>
-          <a href="#skill">SKILL</a>
-          <a href="#about">ABOUT</a>
-          <a href="#contact">CONTACT</a>
-        </nav>
+        {/* 🔥 右側まとめる */}
+        <div className="header__right">
+          
+          {/* ナビ（PC） */}
+          <nav className="header__nav">
+            <a href="#works">WORKS</a>
+            <a href="#skill">SKILL</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+          </nav>
 
-        {/* ハンバーガー */}
-        <div
-          className={`hamburger ${isOpen ? "active" : ""}`}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+          {/* ハンバーガー */}
+          <div
+            className={`hamburger ${isOpen ? "active" : ""}`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
         </div>
       </div>
 

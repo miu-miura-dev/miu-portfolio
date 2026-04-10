@@ -1,5 +1,7 @@
+import { useState, useEffect } from "react";
+
 type Props = {
-  image: string
+  images: string[]
   title: string
   description: string
   tech: string[]
@@ -9,7 +11,7 @@ type Props = {
 }
 
 export const ProjectCard = ({
-  image,
+  images,
   title,
   description,
   tech,
@@ -17,10 +19,37 @@ export const ProjectCard = ({
   demoUrl,
   githubUrl,
 }: Props) => {
+
+  const [index, setIndex] = useState(0);
+  const [hover, setHover] = useState(false);
+
+  // hover中だけ画像スライド
+  useEffect(() => {
+    if (!hover) return;
+
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 800);
+
+    return () => clearInterval(interval);
+  }, [hover, images.length]);
+
   return (
     <div className="project-card">
-      
-      {/* 左 */}
+
+      {/*  上：画像 */}
+      <div
+        className="project-card__image"
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => {
+          setHover(false);
+          setIndex(0); // 戻す（任意）
+        }}
+      >
+        <img src={images[index]} alt={title} />
+      </div>
+
+      {/*  下：テキスト */}
       <div className="project-card__content">
         <h3 className="project-card__title">{title}</h3>
 
@@ -44,10 +73,6 @@ export const ProjectCard = ({
         </div>
       </div>
 
-      {/* 右 */}
-      <div className="project-card__image">
-        <img src={image} alt={title} />
-      </div>
     </div>
   )
 }
