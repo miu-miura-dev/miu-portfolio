@@ -150,14 +150,14 @@
 .project-card__image {
   background-color: #ececec;
   display: flex;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
 }
 
 .project-card__image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 .project-card__image img {
   transition: 0.4s;
